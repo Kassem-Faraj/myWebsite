@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+.fa-solid.fa-bars{
+  display: none;
+}
+.fa-solid.fa-rectangle-xmark{
+  display: none;
+}
+.logo {
+
+}
+
+
+.nav-container{
+  color: white;
+  width: 100%;
+  background-color: rgb(1, 1, 69);
+}
+.nav-main {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 640px) {
+  .nav-items-container{
+    height: 100vh;
+    background-color: rgba(1, 1, 69, 0.74);
+    position: fixed;
+    top: 0;
+    right: -60%;
+    z-index: 55555;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .nav-items{
+    position: relative;
+    top: 62px;
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+    height: 50%;
+  }
+  .fa-solid.fa-bars{
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    font-size: 1.3rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .fa-solid.fa-rectangle-xmark{
+    position: absolute;
+    display: block;
+    top: 1.4rem;
+    font-size: 1.3rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .menu-visible {
+    right: 0;
+  }
+}
