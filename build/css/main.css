@@ -30,6 +30,10 @@ body, html {
   font-size: 1.6rem;
 }
 
+.fa-solid {
+  transition: 1s;
+}
+
 @media (max-width: 640px) {
   .nav-items-container{
     height: 100vh;
@@ -68,4 +72,14 @@ body, html {
   .menu-visible {
     right: 0;
   }
+}
+.fa-solid.fa-circle-up{
+  color: rgb(1, 1, 69);
+  position: fixed;
+  bottom: 30px;
+  font-size: 3.4rem;
+  opacity: 0;
+  cursor: pointer;
+  right: 30px;
+  transition: all 2s;
 }
