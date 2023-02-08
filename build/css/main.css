@@ -76,10 +76,20 @@ body, html {
 .fa-solid.fa-circle-up{
   color: rgb(1, 1, 69);
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   font-size: 3.4rem;
   opacity: 0;
   cursor: pointer;
   right: 30px;
-  transition: all 2s;
+  transition: all 0.5s;
+}
+
+header {
+  height: 2000px;
+}
+
+#toTop.active {
+  bottom: 30px;
+  pointer-events: auto;
+  opacity:1;
 }
