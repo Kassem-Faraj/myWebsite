@@ -10,6 +10,11 @@
 body, html {
   overflow-x: hidden;
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: green;
+}
 .fa-solid.fa-bars{
   display: none;
 }
@@ -20,14 +25,15 @@ body, html {
 
 }
 
-
 .nav-container{
   color: white;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: rgb(1, 1, 69);
 }
 .nav-main {
   font-size: 1.6rem;
+  width: 100%;
 }
 
 .fa-solid {
@@ -84,12 +90,30 @@ body, html {
   transition: all 0.5s;
 }
 
-header {
-  height: 2000px;
-}
 
 #toTop.active {
   bottom: 30px;
   pointer-events: auto;
   opacity:1;
 }
+
+.header-container{
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+.profile {
+  background: url('../../images/header-img.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+/* CSS Styling for large moniotors(responsiveness) */
+@media screen and (min-width: 1600px) {
+  .nav-main {
+    max-width: 1600px;
+  }
+  
+  
+  }
